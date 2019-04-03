@@ -1,20 +1,16 @@
-//
-//  ViewController.swift
-//  UseMMDrawerController
-//
-//  Created by 永見彰宏 on 2019/03/31.
-//  Copyright © 2019 永見彰宏. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
-
+    @IBAction func openButton(_ sender: Any) {
+        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.centerContainer!.toggle(MMDrawerSide.left,animated: true, completion:nil)
+    }
+    
 }
 

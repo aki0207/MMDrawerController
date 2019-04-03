@@ -1,21 +1,38 @@
-//
-//  AppDelegate.swift
-//  UseMMDrawerController
-//
-//  Created by 永見彰宏 on 2019/03/31.
-//  Copyright © 2019 永見彰宏. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var centerContainer: MMDrawerController?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let centerViewController = mainStoryboard.instantiateViewController(withIdentifier: "CenterView") as! ViewController
+        
+        let leftViewController = mainStoryboard.instantiateViewController(withIdentifier: "LeftSideView") as! UIViewController
+        //     let leftViewController = mainStoryboard.instantiateViewControllerWithIdentifier("RightSideView") as! HogeViewController
+        
+        let leftSideNav = UINavigationController(rootViewController: leftViewController)
+        let centerNav = UINavigationController(rootViewController: centerViewController)
+        //     let rightNav = UINavigationController(rootViewController: rightViewController)
+        
+        centerContainer = MMDrawerController(center: centerNav, leftDrawerViewController: leftSideNav,rightDrawerViewController:nil)
+        
+        //こいつで横幅をセットできる
+        centerContainer!.setMaximumLeftDrawerWidth(340, animated: true, completion: nil)
+        
+        //オープン方法のモード指定
+        centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.bezelPanningCenterView
+        
+        //クローズ方法のモード指定
+        centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.all
+        
+        window!.rootViewController = centerContainer
+        window!.makeKeyAndVisible()
         return true
     }
 

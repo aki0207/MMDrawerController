@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B28774315EA1B28CDEA5DEC /* Pods_UseMMDrawerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E551980DDBA89CD79A9128 /* Pods_UseMMDrawerController.framework */; };
 		C511DC8D2250B4F400FBB39E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511DC8C2250B4F400FBB39E /* AppDelegate.swift */; };
 		C511DC8F2250B4F400FBB39E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511DC8E2250B4F400FBB39E /* ViewController.swift */; };
 		C511DC922250B4F400FBB39E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C511DC902250B4F400FBB39E /* Main.storyboard */; };
 		C511DC942250B4F700FBB39E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C511DC932250B4F700FBB39E /* Assets.xcassets */; };
 		C511DC972250B4F700FBB39E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C511DC952250B4F700FBB39E /* LaunchScreen.storyboard */; };
+		C511DCA022548B8300FBB39E /* Damy.m in Sources */ = {isa = PBXBuildFile; fileRef = C511DC9F22548B8300FBB39E /* Damy.m */; };
+		C511DCA222548C9E00FBB39E /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511DCA122548C9E00FBB39E /* LeftSideViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		466C6A3D533BC46C27479887 /* Pods-UseMMDrawerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UseMMDrawerController.debug.xcconfig"; path = "Target Support Files/Pods-UseMMDrawerController/Pods-UseMMDrawerController.debug.xcconfig"; sourceTree = "<group>"; };
+		4E364BF2F99C6DACEA776BA1 /* Pods-UseMMDrawerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UseMMDrawerController.release.xcconfig"; path = "Target Support Files/Pods-UseMMDrawerController/Pods-UseMMDrawerController.release.xcconfig"; sourceTree = "<group>"; };
+		52E551980DDBA89CD79A9128 /* Pods_UseMMDrawerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UseMMDrawerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C511DC892250B4F400FBB39E /* UseMMDrawerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UseMMDrawerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C511DC8C2250B4F400FBB39E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C511DC8E2250B4F400FBB39E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,9 @@
 		C511DC932250B4F700FBB39E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C511DC962250B4F700FBB39E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C511DC982250B4F700FBB39E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C511DC9E22548B8300FBB39E /* UseMMDrawerController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UseMMDrawerController-Bridging-Header.h"; sourceTree = "<group>"; };
+		C511DC9F22548B8300FBB39E /* Damy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Damy.m; sourceTree = "<group>"; };
+		C511DCA122548C9E00FBB39E /* LeftSideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B28774315EA1B28CDEA5DEC /* Pods_UseMMDrawerController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +50,8 @@
 			children = (
 				C511DC8B2250B4F400FBB39E /* UseMMDrawerController */,
 				C511DC8A2250B4F400FBB39E /* Products */,
+				DF05C11051B10EC4447B015D /* Pods */,
+				DF01A713D5E4F8BBBDEC4CE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +68,32 @@
 			children = (
 				C511DC8C2250B4F400FBB39E /* AppDelegate.swift */,
 				C511DC8E2250B4F400FBB39E /* ViewController.swift */,
+				C511DC9F22548B8300FBB39E /* Damy.m */,
 				C511DC902250B4F400FBB39E /* Main.storyboard */,
+				C511DCA122548C9E00FBB39E /* LeftSideViewController.swift */,
 				C511DC932250B4F700FBB39E /* Assets.xcassets */,
 				C511DC952250B4F700FBB39E /* LaunchScreen.storyboard */,
 				C511DC982250B4F700FBB39E /* Info.plist */,
+				C511DC9E22548B8300FBB39E /* UseMMDrawerController-Bridging-Header.h */,
 			);
 			path = UseMMDrawerController;
+			sourceTree = "<group>";
+		};
+		DF01A713D5E4F8BBBDEC4CE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52E551980DDBA89CD79A9128 /* Pods_UseMMDrawerController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF05C11051B10EC4447B015D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				466C6A3D533BC46C27479887 /* Pods-UseMMDrawerController.debug.xcconfig */,
+				4E364BF2F99C6DACEA776BA1 /* Pods-UseMMDrawerController.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C511DC9B2250B4F700FBB39E /* Build configuration list for PBXNativeTarget "UseMMDrawerController" */;
 			buildPhases = (
+				A5EADDF756584145A9875661 /* [CP] Check Pods Manifest.lock */,
 				C511DC852250B4F400FBB39E /* Sources */,
 				C511DC862250B4F400FBB39E /* Frameworks */,
 				C511DC872250B4F400FBB39E /* Resources */,
+				249EC48B5B1EB4564B4F6914 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +130,7 @@
 				TargetAttributes = {
 					C511DC882250B4F400FBB39E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,12 +165,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		249EC48B5B1EB4564B4F6914 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UseMMDrawerController/Pods-UseMMDrawerController-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MMDrawerController/MMDrawerController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMDrawerController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UseMMDrawerController/Pods-UseMMDrawerController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5EADDF756584145A9875661 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UseMMDrawerController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C511DC852250B4F400FBB39E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C511DCA222548C9E00FBB39E /* LeftSideViewController.swift in Sources */,
 				C511DC8F2250B4F400FBB39E /* ViewController.swift in Sources */,
+				C511DCA022548B8300FBB39E /* Damy.m in Sources */,
 				C511DC8D2250B4F400FBB39E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,8 +364,10 @@
 		};
 		C511DC9C2250B4F700FBB39E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 466C6A3D533BC46C27479887 /* Pods-UseMMDrawerController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UseMMDrawerController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -290,6 +376,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aki.UseMMDrawerController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UseMMDrawerController/UseMMDrawerController-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,8 +385,10 @@
 		};
 		C511DC9D2250B4F700FBB39E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E364BF2F99C6DACEA776BA1 /* Pods-UseMMDrawerController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UseMMDrawerController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,6 +397,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aki.UseMMDrawerController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UseMMDrawerController/UseMMDrawerController-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
